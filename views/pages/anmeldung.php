@@ -24,7 +24,7 @@
             <h3>Registrieren</h3>
             Sie besitzen noch keine Kennung für unseren Web-Shop?<br>
             Dann bitte hier registrieren:
-            <form action="registrierung.html">
+            <form action="?controller=services&action=registrieren">
                 <button type="submit">Registrieren</button>
             </form>
         </td>
