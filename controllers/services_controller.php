@@ -11,7 +11,9 @@
         }
 
         public function registrieren() {
-
+            $status = ServiceRepository::registrieren($_POST["kennung"], $_POST["vorname"], $_POST["nachname"], $_POST["strasse"], $_POST["ort"], $_POST["plz"], $_POST["kontonummer"], $_POST["blz"], $_POST["institut"], $_POST["passwort"]);
+            if($status) call("pages", "anmeldung");
+            else call("pages", "registrierung");
         }
     }
     

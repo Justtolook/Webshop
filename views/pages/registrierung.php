@@ -1,7 +1,6 @@
-
 <h1>Registrieren</h1>
 <table>
-    <form method="post" action="registrierung.php">
+    <form method="post" action="?controller=services&action=registrieren">
         <tr>
             <td>Kennung</td>
             <td><input type="text" name="kennung"></input></td>
