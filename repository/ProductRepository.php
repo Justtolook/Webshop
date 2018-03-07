@@ -3,7 +3,7 @@ class ProductRepository {
 	public static function all() {
 		  $list = [];
 		  $db = Db::getInstance();
-		  $req = $db->query('SELECT * FROM products');
+		  $req = $db->query('SELECT * FROM v_produkt_info');
 		  // we create a list of Post objects from the database results
 		  /*foreach($req->fetchAll() as $post) {
 			$list[] = new Post($post['ID_post'], $post['author'], $post['content']);
