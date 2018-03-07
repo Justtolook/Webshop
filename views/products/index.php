@@ -12,13 +12,13 @@ foreach($products as $product) {
 				</a>
 			</div>
 			<div class="card-body">
-			<h4 class="card-title"><?php echo $product->getName();?></h4>
-			<p class ="card-text">Preis:<?php echo $product->getPrice();?> Euro</p>
-			
-			<a  class="btn btn-primary" role="button" >Buy</a>
-			<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal<?php echo $product->getID();?>">
-				Details
-			</button>
+				<h4 class="card-title"><?php echo $product->getName();?></h4>
+				<p class ="card-text">Preis: <?php echo $product->getPrice();?> Euro</p>
+				
+				<a  class="btn btn-primary" role="button" >Buy</a>
+				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal<?php echo $product->getID();?>">
+					Details
+				</button>
 			</div>
 		</div>
 	</div>
@@ -39,7 +39,10 @@ foreach($products as $product) {
 				
 			  </div>
 			  <div class="modal-body">
-				<?php echo $product->getDescription(); ?>
+				<?php echo $product->getDescription(); ?><br>
+				Hersteller: <?php echo $product->getManufactor();?><br>
+				Kategorie: <?php echo $product->getCategory();?>
+			
 			  </div>
 			  <div class="modal-footer">
 				<b>Preis: <?php echo $product->getPrice(); ?></b>

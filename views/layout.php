@@ -107,6 +107,6 @@
       <!--/.Footer-->
   </body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="/Web_Shop/bootstrap/js/bootstrap.js"></script>
-<script src="/Web_Shop/bootstrap/js/mdb.js"></script>
+<script src="/hlammert/WebshopWMVC/bootstrap/js/bootstrap.js"></script>
+<script src="/hlammert/WebshopWMVC/bootstrap/js/mdb.js"></script>
 </html>
