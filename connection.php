@@ -11,7 +11,7 @@
 		//self::$instance = mysqli_connect('localhost', 'root', '');
 		  
         $pdo_options[PDO::ATTR_ERRMODE] = PDO::ERRMODE_EXCEPTION;
-        self::$instance = new PDO('mysql:host=localhost;dbname=php_mvc', 'root', '', $pdo_options);
+        self::$instance = new PDO('mysql:host=localhost;dbname=hlammert_ws', 'root', '', $pdo_options);
       }
       return self::$instance;
     }
