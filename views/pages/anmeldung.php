@@ -5,15 +5,15 @@
     <tr>
         <td>
     <h3>Anmelden</h3>
-    <form method="POST" action="ws1.php">
+    <form method="POST" action="?controller=services&action=anmelden">
         <table>
             <tr>
                 <td>Kennung</td>
-                <td> <input type="text" name="kennung"></td></input> </td>
+                <td> <input type="text" name="username"></td></input> </td>
             </tr>
             <tr>
                 <td>Passwort</td>
-                <td> <input type="password" name="passwort"></td></input> </td>
+                <td> <input type="password" name="password"></td></input> </td>
             </tr>
         </table>
         <button type="submit">Bestätigen</button>
