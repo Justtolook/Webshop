@@ -9,5 +9,26 @@
     public function error() {
       require_once('views/pages/error.php');
     }
+
+    public function anmeldung() {
+      require_once('views/pages/anmeldung.php');
+    }
+
+    public function error_invalid_session() {
+      require_once('views/pages/error_invalid_session.php');
+    }
+
+    public function loginfailed() {
+      require_once('views/pages/loginfailed.php');
+    }
+
+    public function loginsuccessfull() {
+      require_once('views/pages/loginsuccessfull.php');
+    }
+
+    public function registrierung() {
+      require_once('views/pages/registrierung.php');
+    }
+    
   }
 ?>

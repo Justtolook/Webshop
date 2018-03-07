@@ -13,7 +13,7 @@
 		<nav class="navbar navbar-expand-lg navbar-dark unique-color fixed-top">
 
 			<!-- Navbar brand -->
-			<a class="navbar-brand" href="/Web_Shop">Home</a>
+			<a class="navbar-brand" href="/hlammert/WebshopWMVC">Home</a>
 
 			<!-- Collapse button -->
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"

@@ -6,7 +6,7 @@
 		$action     = $_GET['action'];
 	} else {
 		$controller = 'pages';
-		$action     = 'anmeldung';
+		$action     = 'home';
 	}
 
   require_once('views/layout.php');
