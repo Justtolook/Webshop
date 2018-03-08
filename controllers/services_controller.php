@@ -7,7 +7,7 @@
         }
 
         public function abmelden() {
-
+            session_destroy();
         }
 
         public function registrieren() {
