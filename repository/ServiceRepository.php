@@ -43,11 +43,24 @@
             $db = Db::getInstance();
             session_start();
             $user_id = $_SESSION["var"];
-            $req = $db->prepare('INSERT INTO auswaehlen (ID_Kunde, ID_Produkt, Anzahl) VALUES (:user_id, :ID_Produkt, :Menge)');
+
+            $req = $db->prepare('SELECT Count(*) FROM auswaehlen WHERE ID_Kunde = :user_id AND ID_Produkt = :ID_Produkt');
+            $req->bindValue(':user_id', $user_id, PDO::PARAM_INT);
+            $req->bindValue(':ID_Produkt', $ID_Produkt, PDO::PARAM_INT);
+            $req->execute();
+            $req = $req->fetchAll();
+
+            if($req[0][0] > 0) {
+                $req = $db->prepare('UPDATE auswaehlen SET Anzahl = Anzahl + :Menge WHERE ID_Kunde = :user_id AND ID_Produkt = :ID_Produkt');
+            }
+            else {
+                $req = $db->prepare('INSERT INTO auswaehlen (ID_Kunde, ID_Produkt, Anzahl) VALUES (:user_id, :ID_Produkt, :Menge)');
+            }
             $req->bindValue(':user_id', $user_id, PDO::PARAM_INT);
             $req->bindValue(':ID_Produkt', $ID_Produkt, PDO::PARAM_INT);
             $req->bindParam(':Menge', $Menge, PDO::PARAM_INT);
             $req->execute();
+
             return $req;
         }
 
