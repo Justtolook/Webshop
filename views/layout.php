@@ -51,6 +51,16 @@
 						<input class="form-control mr-sm-2" type="text" placeholder="Search" name="name" aria-label="Search">
 					</div>
 				</form>
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Konto</a>
+						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Profil</a>
+							<a class="dropdown-item" href="#">Rechnungen</a>
+							<a class="dropdown-item" href="?controller=services&action=abmelden">Abmelden</a>
+						</div>
+					</li>
+				</ul>
 			</div>
 			<!-- Collapsible content -->
 
