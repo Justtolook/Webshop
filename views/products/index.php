@@ -15,7 +15,7 @@ foreach($products as $product) {
 				<h4 class="card-title"><?php echo $product->getName();?></h4>
 				<p class ="card-text">Preis: <?php echo $product->getPrice();?> Euro</p>
 				
-				<a  class="btn btn-primary" role="button" >Buy</a>
+				<a href="?controller=services&action=addToWarenkorb&ID_Produkt=<?php echo $product->getID(); ?>&Menge=1" class="btn btn-primary" role="button" >Buy</a>
 				<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal<?php echo $product->getID();?>">
 					Details
 				</button>
@@ -46,7 +46,7 @@ foreach($products as $product) {
 			  </div>
 			  <div class="modal-footer">
 				<b>Preis: <?php echo $product->getPrice(); ?></b>
-				<button type="button" class="btn btn-primary">Buy</button>
+				<a href="?controller=services&action=addToWarenkorb&ID_Produkt=<?php echo $product->getID(); ?>&Menge=1" class="btn btn-primary" role="button" >Buy</a>
 				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 			  </div>
 			</div>

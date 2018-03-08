@@ -15,6 +15,11 @@
             if($status) call("pages", "anmeldung");
             else call("pages", "registrierung");
         }
+
+        public function addToWarenkorb() {
+            $status = ServiceRepository::addToWarenkorb($_GET['ID_Produkt'], $_GET['Menge']);
+            call('products', 'index');
+        }
     }
     
 ?>

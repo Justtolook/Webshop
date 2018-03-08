@@ -30,7 +30,7 @@
   $controllers = array('pages' => ['home', 'error', 'anmeldung', 'loginfailed', 'loginsuccessfull', 'registrierung', 'error_invalid_session'],
 					   'posts' => ['index', 'show'],
 						 'products' => ['index', 'add', 'input', 'search'],
-						 'services' => ['anmelden', 'abmelden', 'registrieren']);
+						 'services' => ['anmelden', 'abmelden', 'registrieren', 'addToWarenkorb']);
 
   if (array_key_exists($controller, $controllers)) {
 	if (in_array($action, $controllers[$controller])) {

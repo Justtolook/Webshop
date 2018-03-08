@@ -39,5 +39,17 @@
             return $req;
         }
 
+        public static function addToWarenkorb($ID_Produkt, $Menge) {
+            $db = Db::getInstance();
+            session_start();
+            $user_id = $_SESSION["var"];
+            $req = $db->prepare('INSERT INTO auswaehlen (ID_Kunde, ID_Produkt, Anzahl) VALUES (:user_id, :ID_Produkt, :Menge)');
+            $req->bindValue(':user_id', $user_id, PDO::PARAM_INT);
+            $req->bindValue(':ID_Produkt', $ID_Produkt, PDO::PARAM_INT);
+            $req->bindParam(':Menge', $Menge, PDO::PARAM_INT);
+            $req->execute();
+            return $req;
+        }
+
     }
 ?>
