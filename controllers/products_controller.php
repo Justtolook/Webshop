@@ -31,7 +31,7 @@ class ProductsController {
 
 		foreach($product_list->fetchAll() AS $product)
         {
-            $products[] = new Product($product['ID_Product'], $product['Name'], $product['Description'], $product['Price']);
+            $products[] = new Product($product['ID_Produkt'], $product['Name'], $product['Beschreibung'], $product['Preis'], $product['Kategorie'], $product['Hersteller']);
         }
 	
 		require_once('views/products/index.php');

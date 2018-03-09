@@ -23,7 +23,8 @@ class ProductRepository {
 	
 	public static function search($name) {
 		$db = Db::getInstance();
-		$req = $db->prepare('SELECT * FROM products WHERE Name LIKE :name ');
+		$name = '%' . $name . '%';
+		$req = $db->prepare('SELECT * FROM v_produkt_info WHERE Name LIKE :name ');
 		$req->bindParam(':name', $name, PDO::PARAM_STR);
 		$req->execute();
 		return $req;
