@@ -52,6 +52,9 @@
 					</div>
 				</form>
 				<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+						<a class="nav-link" href="?controller=warenkorb&action=index">Warenkorb</a>
+					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Konto</a>
 						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">

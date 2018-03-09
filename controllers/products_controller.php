@@ -36,5 +36,7 @@ class ProductsController {
 	
 		require_once('views/products/index.php');
 	}
+
+	
 }	
 ?>

@@ -6,7 +6,7 @@ class Product{
 	protected $price;
 	protected $category;
 	protected $manufactor;
-	
+
 	public function __construct($id, $name, $description, $price, $category, $manufactor) {
       $this->setID($id);
       $this->setName($name);
