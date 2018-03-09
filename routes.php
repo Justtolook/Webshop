@@ -18,7 +18,7 @@
 	require_once('repository/ServiceRepository.php');
 	require_once('repository/WarenkorbRepository.php');
 	
-		if(check_session() || ($controller == 'pages' || $controller == 'products' || $controller == 'services')) {
+		if(check_session() || ($controller == 'pages' || $controller == 'products' || ($controller == 'services' && $action != 'addToWarenkorb'))) {
 
 			switch($controller) {
 				case 'pages':
