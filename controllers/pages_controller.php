@@ -29,6 +29,10 @@
     public function registrierung() {
       require_once('views/pages/registrierung.php');
     }
+
+    public function abgemeldet() {
+      require_once('views/pages/abgemeldet.php');
+    }
     
   }
 ?>

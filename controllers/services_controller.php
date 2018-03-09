@@ -9,6 +9,7 @@
         public function abmelden() {
             if(!(isset($_SESSION))) session_start();
             session_destroy();
+            call("pages", "abgemeldet");
         }
 
         public function registrieren() {

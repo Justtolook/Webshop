@@ -50,7 +50,7 @@
 	}
 
   // we're adding an entry for the new controller and its actions
-  $controllers = array('pages' => ['home', 'error', 'anmeldung', 'loginfailed', 'loginsuccessfull', 'registrierung', 'error_invalid_session'],
+  $controllers = array('pages' => ['home', 'error', 'anmeldung', 'loginfailed', 'loginsuccessfull', 'registrierung', 'error_invalid_session', 'abgemeldet'],
 					   'posts' => ['index', 'show'],
 						 'products' => ['index', 'add', 'input', 'search'],
 						 'warenkorb' => ['index'],
