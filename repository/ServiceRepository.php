@@ -10,7 +10,7 @@
                 if(isset($user[0])) {
                     if($user[0][0] == $password) {
                         echo "Logged in";
-                        session_start();
+                        if(!(isset($_SESSION))) session_start();
                         $_SESSION["var"] = $user[0][1];
                         return true;
                     }
@@ -41,7 +41,8 @@
 
         public static function addToWarenkorb($ID_Produkt, $Menge) {
             $db = Db::getInstance();
-            session_start();
+            if(!(isset($_SESSION))) session_start();
+            
             $user_id = $_SESSION["var"];
 
             $req = $db->prepare('SELECT Count(*) FROM auswaehlen WHERE ID_Kunde = :user_id AND ID_Produkt = :ID_Produkt');
