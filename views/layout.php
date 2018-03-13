@@ -59,7 +59,7 @@
 						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Konto</a>
 						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="#">Profil</a>
-							<a class="dropdown-item" href="#">Rechnungen</a>
+							<a class="dropdown-item" href="?controller=rechnung&action=index">Rechnungen</a>
 							<a class="dropdown-item" href="?controller=services&action=abmelden">Abmelden</a>
 						</div>
 					</li>

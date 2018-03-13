@@ -17,6 +17,7 @@
 	require_once('repository/ProductRepository.php');
 	require_once('repository/ServiceRepository.php');
 	require_once('repository/WarenkorbRepository.php');
+	require_once('repository/RechnungRepository.php');
 	
 		if(check_session() || ($controller == 'pages' || $controller == 'products' || ($controller == 'services' && $action != 'addToWarenkorb'))) {
 
@@ -40,6 +41,10 @@
 				require_once('models/warenkorb.php');
 				$controller = new WarenkorbController();
 				break;
+				case 'rechnung':
+				require_once('models/rechnung.php');
+				$controller = new RechnungController();
+				break;
 			}
 		}
 	else {
@@ -54,6 +59,7 @@
 					   'posts' => ['index', 'show'],
 						 'products' => ['index', 'add', 'input', 'search'],
 						 'warenkorb' => ['index', 'kasse'],
+						 'rechnung' => ['index'],
 						 'services' => ['anmelden', 'abmelden', 'registrieren', 'addToWarenkorb']);
 
   if (array_key_exists($controller, $controllers)) {
