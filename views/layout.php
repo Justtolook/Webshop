@@ -110,7 +110,7 @@
           <!--Copyright-->
           <div class="footer-copyright py-3 text-center">
               <div class="container-fluid">
-                  © 2015 Copyright: <a href="https://mdbootstrap.com/material-design-for-bootstrap/"> MDBootstrap.com </a>
+                  © 2018 Copyright: Henrik Lammert </a>
       
               </div>
           </div>

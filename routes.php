@@ -53,7 +53,7 @@
   $controllers = array('pages' => ['home', 'error', 'anmeldung', 'loginfailed', 'loginsuccessfull', 'registrierung', 'error_invalid_session', 'abgemeldet'],
 					   'posts' => ['index', 'show'],
 						 'products' => ['index', 'add', 'input', 'search'],
-						 'warenkorb' => ['index'],
+						 'warenkorb' => ['index', 'kasse'],
 						 'services' => ['anmelden', 'abmelden', 'registrieren', 'addToWarenkorb']);
 
   if (array_key_exists($controller, $controllers)) {

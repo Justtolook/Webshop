@@ -32,3 +32,4 @@
 
 </table>
 <!--Table-->
+<a href="?controller=warenkorb&action=kasse">Zur Kasse</a>

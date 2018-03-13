@@ -11,5 +11,10 @@ class WarenkorbController {
 		
 		require_once('views/warenkorb/index.php');
 	}
+
+	public function kasse() {
+		WarenkorbRepository::kasse();
+		require_once('views/warenkorb/verabschiedung.php');
+	}
 }
 ?>
