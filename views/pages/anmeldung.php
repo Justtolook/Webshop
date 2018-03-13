@@ -23,7 +23,7 @@
         <td>
             <h3>Registrieren</h3>
             Sie besitzen noch keine Kennung für unseren Web-Shop?<br>
-            Dann bitte hier registrieren:
+            Dann bitte hier registrieren:<br>
             <a href="?controller=pages&action=registrierung">Registrieren</a>
         </td>
     </tr>
