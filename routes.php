@@ -4,7 +4,6 @@
 			session_start();
 			if(!(isset($_SESSION["var"]))) {
 					return false;
-					//header("Location: error_invalid_session.html");
 			}
 			else return true;
 	}
@@ -18,8 +17,9 @@
 	require_once('repository/ServiceRepository.php');
 	require_once('repository/WarenkorbRepository.php');
 	require_once('repository/RechnungRepository.php');
+	require_once('repository/HerstellerRepository.php');
 	
-		if(check_session() || ($controller == 'pages' || $controller == 'products' || ($controller == 'services' && $action != 'addToWarenkorb'))) {
+		if(check_session() || ($controller == 'pages' || $controller == 'products' || $controller =='hersteller' || ($controller == 'services' && $action != 'addToWarenkorb'))) {
 
 			switch($controller) {
 				case 'pages':
@@ -45,6 +45,10 @@
 				require_once('models/rechnung.php');
 				$controller = new RechnungController();
 				break;
+				case 'hersteller':
+				require_once('models/hersteller.php');
+				$controller = new HerstellerController();
+				break;
 			}
 		}
 	else {
@@ -60,6 +64,7 @@
 						 'products' => ['index', 'add', 'input', 'search'],
 						 'warenkorb' => ['index', 'kasse'],
 						 'rechnung' => ['index'],
+						 'hersteller' => ['index'],
 						 'services' => ['anmelden', 'abmelden', 'registrieren', 'addToWarenkorb']);
 
   if (array_key_exists($controller, $controllers)) {

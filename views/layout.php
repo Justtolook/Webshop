@@ -27,10 +27,7 @@
 				<!-- Links -->
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="#">Features</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Pricing</a>
+						<a class="nav-link" href="?controller=hersteller&action=index">Hersteller</a>
 					</li>
 
 					<!-- Dropdown -->
@@ -39,7 +36,6 @@
 						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
 							<a class="dropdown-item" href="?controller=products&action=index">List Products</a>
 							<a class="dropdown-item" href="?controller=products&action=add">Add Products</a>
-							<a class="dropdown-item" href="#">Something else here</a>
 						</div>
 					</li>
 
@@ -48,7 +44,7 @@
 
 				<form class="form-inline" action="?controller=products&action=search" method="POST">
 					<div class="md-form mt-0">
-						<input class="form-control mr-sm-2" type="text" placeholder="Search" name="name" aria-label="Search">
+						<input class="form-control mr-sm-2" type="text" placeholder="Suchen" name="name" aria-label="Search">
 					</div>
 				</form>
 				<ul class="navbar-nav mr-auto">
@@ -87,8 +83,8 @@
       
                   <!--First column-->
                   <div class="col-md-6">
-                      <h5 class="text-uppercase">Footer Content</h5>
-                      <p>Here you can use rows and columns here to organize your footer content.</p>
+                      <h5 class="text-uppercase">Informationen</h5>
+                      <p>Diese Webseite wurde erstellt von <b>Henrik Lammert</b>.</p>
                   </div>
                   <!--/.First column-->
       
@@ -96,10 +92,9 @@
                   <div class="col-md-6">
                       <h5 class="text-uppercase">Links</h5>
                       <ul class="list-unstyled">
-                          <li><a href="#!">Link 1</a></li>
-                          <li><a href="#!">Link 2</a></li>
-                          <li><a href="#!">Link 3</a></li>
-                          <li><a href="#!">Link 4</a></li>
+                          <li><a href="?controller=pages&action=impressum">Impressum</a></li>
+						  <li><a href="?controller=products&action=index">Produkte</a></li>
+						  <li><a href="?controller=products&action=index">Hersteller</a></li>
                       </ul>
                   </div>
                   <!--/.Second column-->
@@ -111,7 +106,6 @@
           <div class="footer-copyright py-3 text-center">
               <div class="container-fluid">
                   © 2018 Copyright: Henrik Lammert </a>
-      
               </div>
           </div>
           <!--/.Copyright-->
