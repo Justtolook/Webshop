@@ -9,7 +9,6 @@
                 $user = $req->fetchAll();
                 if(isset($user[0])) {
                     if($user[0][0] == $password) {
-                        echo "Logged in";
                         if(!(isset($_SESSION))) session_start();
                         $_SESSION["var"] = $user[0][1];
                         return true;
