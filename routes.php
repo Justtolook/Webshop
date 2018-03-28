@@ -18,6 +18,7 @@
 	require_once('repository/WarenkorbRepository.php');
 	require_once('repository/RechnungRepository.php');
 	require_once('repository/HerstellerRepository.php');
+	require_once('repository/ProfilRepository.php');
 	
 		if(check_session() || ($controller == 'pages' || $controller == 'products' || $controller =='hersteller' || ($controller == 'services' && $action != 'addToWarenkorb'))) {
 
@@ -49,6 +50,10 @@
 				require_once('models/hersteller.php');
 				$controller = new HerstellerController();
 				break;
+				case 'profil':
+				require_once('models/profil.php');
+				$controller = new ProfilController();
+				break;
 			}
 		}
 	else {
@@ -65,6 +70,7 @@
 						 'warenkorb' => ['index', 'kasse'],
 						 'rechnung' => ['index'],
 						 'hersteller' => ['index'],
+						 'profil' => ['index'],
 						 'services' => ['anmelden', 'abmelden', 'registrieren', 'addToWarenkorb']);
 
   if (array_key_exists($controller, $controllers)) {

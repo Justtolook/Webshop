@@ -23,7 +23,7 @@
             <th scope="row"><?php echo $product->getID(); ?></th>
             <td><?php echo $product->getName(); ?></td>
             <td><?php echo $product->getManufactor(); ?></td>
-            <td><?php echo $product->getQuantity(); //TODO: WARENKORB ?></td>
+            <td><?php echo $product->getQuantity(); ?></td>
             <td><?php echo $product->getPrice(); ?></td>
         </tr>
         <?php } ?>

@@ -17,7 +17,7 @@
         <?php foreach($arrayHersteller as $hersteller) { ?>
         <tr>
             <th scope="row"><?php echo $hersteller->getName(); ?></th>
-            <td><?php echo $hersteller->getAdresse(); ?></td>
+            <td><a href="http://<?php echo $hersteller->getAdresse(); ?>"><?php echo $hersteller->getAdresse(); ?></a></td>
             <td><?php echo $hersteller->getEmail(); ?></td>
             <td><a href="mailto:<?php echo $hersteller->getEmail()?>"><img src="icon/email.svg" height="36px" width="36px"></a>
         </tr>

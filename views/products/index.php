@@ -1,4 +1,3 @@
-<p>Here are the Products:</p>
 <div class="row">
 <?php 
 foreach($products as $product) { 

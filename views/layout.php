@@ -54,7 +54,7 @@
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Konto</a>
 						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-							<a class="dropdown-item" href="#">Profil</a>
+							<a class="dropdown-item" href="?controller=profil&action=index">Profil</a>
 							<a class="dropdown-item" href="?controller=rechnung&action=index">Rechnungen</a>
 							<a class="dropdown-item" href="?controller=services&action=abmelden">Abmelden</a>
 						</div>
@@ -94,7 +94,7 @@
                       <ul class="list-unstyled">
                           <li><a href="?controller=pages&action=impressum">Impressum</a></li>
 						  <li><a href="?controller=products&action=index">Produkte</a></li>
-						  <li><a href="?controller=products&action=index">Hersteller</a></li>
+						  <li><a href="?controller=hersteller&action=index">Hersteller</a></li>
                       </ul>
                   </div>
                   <!--/.Second column-->
