@@ -19,7 +19,7 @@
             <th scope="row"><?php echo $hersteller->getName(); ?></th>
             <td><?php echo $hersteller->getAdresse(); ?></td>
             <td><?php echo $hersteller->getEmail(); ?></td>
-            <td><a href="mailto:<?php echo $hersteller->getEmail()?>"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <td><a href="mailto:<?php echo $hersteller->getEmail()?>"><img src="icon/email.svg" height="36px" width="36px"></a>
         </tr>
         <?php } ?>
     </tbody>
