@@ -9,11 +9,11 @@
         <table>
             <tr>
                 <td>Kennung</td>
-                <td> <input type="text" name="username"></td></input> </td>
+                <td> <input type="text" name="username" required></td></input> </td>
             </tr>
             <tr>
                 <td>Passwort</td>
-                <td> <input type="password" name="password"></td></input> </td>
+                <td> <input type="password" name="password" required></td></input> </td>
             </tr>
         </table>
         <button type="submit">Bestätigen</button>

@@ -3,43 +3,43 @@
     <form method="post" action="?controller=services&action=registrieren">
         <tr>
             <td>Kennung</td>
-            <td><input type="text" name="kennung"></input></td>
+            <td><input type="text" name="kennung" required></input></td>
         </tr>
         <tr>
             <td>Vorname</td>
-            <td><input type="text" name="vorname"></input></td>
+            <td><input type="text" name="vorname" required></input></td>
         </tr>
         <tr>
             <td>Nachname</td>
-            <td><input type="text" name="nachname"></input></td>
+            <td><input type="text" name="nachname" required></input></td>
         </tr>
         <tr>
             <td>Straße</td>
-            <td><input type="text" name="strasse"></input></td>
+            <td><input type="text" name="strasse" required></input></td>
         </tr>
         <tr>
             <td>Ort</td>
-            <td><input type="text" name="ort"></input></td>
+            <td><input type="text" name="ort" required></input></td>
         </tr>
         <tr>
             <td>PLZ</td>
-            <td><input type="text" name="plz"></input></td>
+            <td><input type="text" name="plz" required></input></td>
         </tr>
         <tr>
             <td>Kontonummer</td>
-            <td><input type="text" name="kontonummer"></input></td>
+            <td><input type="text" name="kontonummer" required></input></td>
         </tr>
         <tr>
             <td>BLZ</td>
-            <td><input type="text" name="blz"></input></td>
+            <td><input type="text" name="blz" required></input></td>
         </tr>
         <tr>
             <td>Institut</td>
-            <td><input type="text" name="institut"></input></td>
+            <td><input type="text" name="institut" required></input></td>
         </tr>
         <tr>
             <td>Passwort</td>
-            <td><input type="password" name="passwort"></input></td>
+            <td><input type="password" name="passwort" required></input></td>
         </tr>
         <tr>
             <td><button type="submit">Registrieren</button></td>
