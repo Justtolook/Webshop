@@ -33,6 +33,10 @@
     public function abgemeldet() {
       require_once('views/pages/abgemeldet.php');
     }
+
+    public function error_existingUser() {
+      require_once('views/pages/error_existingUser.php');
+    }
     
   }
 ?>

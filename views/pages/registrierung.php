@@ -42,8 +42,8 @@
             <td><input type="password" name="passwort" required></input></td>
         </tr>
         <tr>
-            <td><button type="submit">Registrieren</button></td>
-            <td><button type="reset">Leeren</button></td>
+            <td><button type="submit " class="btn btn-default">Registrieren</button></td>
+            <td><button type="reset" class="btn btn-blue-grey">Leeren</button></td>
         </tr>
     </form>
 </table>

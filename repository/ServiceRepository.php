@@ -23,6 +23,16 @@
         public static function registrieren($kennung, $vorname, $nachname, $strasse, $ort, $plz, $kontonummer, $blz, $institut, $passwort) {
             $db = Db::getInstance();
             //TODO: vor der Anlegung des neuen Benutzers prüfen, ob Kennung bereits vorhanden ist
+
+            $req = $db->prepare('SELECT * FROM kunde WHERE Kennung = :kennung');
+            $req->bindParam(':kennung', $kennung, PDO::PARAM_STR);
+            $req->execute();
+            
+            $req = $req->fetchAll();
+            if(isset($req[0])) return false;
+            else if(isset($req[0][0])) return false;
+            
+
             $req = $db->prepare('INSERT INTO `kunde` (`ID_Kunde`, `Kennung`, `Vorname`, `Nachname`, `Strasse`, `Ort`, `PLZ`, `Kontonummer`, `BLZ`, `Institut`, `Passwort`) VALUES (NULL, :kennung, :vorname, :nachname, :strasse, :ort, :plz, :kontonummer, :blz, :institut, :passwort)');
             $req->bindParam(':kennung', $kennung, PDO::PARAM_STR);
             $req->bindParam(':vorname', $vorname, PDO::PARAM_STR);
