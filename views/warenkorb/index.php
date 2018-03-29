@@ -39,7 +39,7 @@
 
 </table>
 <!--Table-->
-<a href="?controller=warenkorb&action=kasse">Zur Kasse</a>
+<a href="?controller=warenkorb&action=kasse" class="btn btn-success <?php if(count($warenkorb) == 0) echo "disabled" ?>">Zur Kasse</a>
 
 <?php foreach($warenkorb as $product) { ?>
     <div class="modal fade" id="myModal<?php echo $product->getID();?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
