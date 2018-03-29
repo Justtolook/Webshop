@@ -16,5 +16,15 @@ class WarenkorbController {
 		WarenkorbRepository::kasse();
 		require_once('views/warenkorb/verabschiedung.php');
 	}
+
+	public function produktEntfernen() {
+		WarenkorbRepository::produktEntfernen(($_GET['id']));
+		call('warenkorb', 'index');
+	}
+
+	public function changeQuantity() {
+		WarenkorbRepository::changeQuantity($_POST['quantity'], $_GET['id']);
+		call('warenkorb', 'index');
+	}
 }
 ?>

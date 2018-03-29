@@ -45,5 +45,28 @@ class WarenkorbRepository {
 		$req->bindValue(':user_id', $user_id, PDO::PARAM_INT);
 		$req->execute();
 	}
+
+	public function produktEntfernen($id) {
+		$db = Db::getInstance();
+		if(!(isset($_SESSION))) session_start();
+		$user_id = $_SESSION['var'];
+
+		$req = $db->prepare('DELETE FROM auswaehlen WHERE ID_Kunde = :user_id AND ID_Produkt = :id');
+		$req->bindValue(':user_id', $user_id, PDO::PARAM_INT);
+		$req->bindValue(':id', $id, PDO::PARAM_INT);
+		$req->execute();
+	}
+
+	public function changeQuantity($anzahl, $id) {
+		$db = Db::getInstance();
+		if(!(isset($_SESSION))) session_start();
+		$user_id = $_SESSION['var'];
+
+		$req = $db->prepare('UPDATE auswaehlen SET Anzahl = :anzahl WHERE ID_Kunde = :user_id AND ID_Produkt = :id');
+		$req->bindValue(':user_id', $user_id, PDO::PARAM_INT);
+		$req->bindValue(':id', $id, PDO::PARAM_INT);
+		$req->bindValue(':anzahl', $anzahl, PDO::PARAM_INT);
+		$req->execute();
+	}
 }
 ?>

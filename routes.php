@@ -7,6 +7,7 @@
 			}
 			else return true;
 	}
+	else return true;
 	}
 
   function call($controller, $action) {
@@ -67,7 +68,7 @@
   $controllers = array('pages' => ['home', 'error', 'anmeldung', 'loginfailed', 'loginsuccessfull', 'registrierung', 'error_invalid_session', 'abgemeldet'],
 					   'posts' => ['index', 'show'],
 						 'products' => ['index', 'add', 'input', 'search'],
-						 'warenkorb' => ['index', 'kasse'],
+						 'warenkorb' => ['index', 'kasse', 'produktEntfernen', 'changeQuantity'],
 						 'rechnung' => ['index'],
 						 'hersteller' => ['index'],
 						 'profil' => ['index'],
